@@ -1,2 +1,0 @@
-en esta actividad lo que hicimos fue instalamos mysql hicimos una base de datos llamada "base1" y desde el codigo 
-creamos las tablas que van a componer la base de datos
