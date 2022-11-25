@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Crud MYSQL</title>
+    </head>
+  <body>
+    <div class="container">
+      <a href="/create">Crear Registro</a>
+        <table class="table text-center ">
+          <thead>
+            <tr>
+              <th scope="col1">ID CLIENTES</th>
+              <th scope="col1">NOMBRE CLIENTE</th>
+              <th scope="col1">APELLIDO CLIENTE</th>
+              <th scope="col1">FECHA NAC. CLIENTE</th>
+              <th scope="col1">PESO CLIENTE</th>
+              <th scope="col1">ALTURA CLIENTE</th>
+              <th scope="col1">DOMICILIO CLIENTE</th>
+              <th scope="col1">COD POSTAL</th>
+              <th scope="col1">MOVIL01 CLIENTE</th>
+              <th scope="col1">MOVIL02 CLIENTE</th>
+              <th scope="col1">EMAIL CLIENTE</th>
+              <th scope="col1">ACCIONES</th>
+            </tr>
+          </thead>
+          <tbody>
+            <% data.forEach((clientes)=>{ %>
+            <tr>
+              <td><%= clientes.ID_CLIENTE %></td>
+              <td><%= clientes.nombreCliente %></td>
+              <td><%= clientes.apellidoCliente %></td>
+              <td><%= clientes.fNacimientoCliente %></td>
+              <td><%= clientes.pesoCliente %></td>
+              <td><%= clientes.alturaCliente %></td>
+              <td><%= clientes.domicilioCliente %></td>
+              <td><%= clientes.codPostal %></td>
+              <td><%= clientes.tel01 %></td>
+              <td><%= clientes.tel02 %></td>
+              <td><%= clientes.emailCliente %></td>
+              <td>
+                <a href="/edit/<%= clientes.ID_CLIENTE %>" class="btn btn-outline-info">editar</a>
+                <a href="/delete/<%= clientes.ID_CLIENTE %>" class="btn btn-outline-danger">borrar</a>
+              </td>
+            </tr>
+            <% }) %>
+          </tbody>
+        </table>
+
+      </div>
+
+    
+  </body>
+</html>

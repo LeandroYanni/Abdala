@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Crud MYSQL</title>
+</head>
+  <body>
+
+        <div class="card border-secondary">  
+            <div class="card-header">Nuevo Registro</div>
+            <div class="card-body">
+                <form action="/save" method="POST">
+                    
+                    <div class="mb-3">
+                        <label for="user" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="nombre" name="nombre" tabindex="1">
+                    </div>
+                        
+                    <div class="mb-3">
+                        <label for="user" class="form-label">Apellido</label>
+                        <input type="text" class="form-control" id="apellido" name="apellido" tabindex="2">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="user" class="form-label">Fecha de Nacimiento</label>
+                        <input type="date" class="form-control" id="fecha_nac" name="fecha_nac" tabindex="3">
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label for="user" class="form-label">Peso</label>
+                        <input type="text" class="form-control" id="peso" name="peso" tabindex="4">
+                    </div>
+                        
+                    <div class="mb-3">
+                        <label for="user" class="form-label">Altura</label>
+                        <input type="text" class="form-control" id="altura" name="altura" tabindex="5">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="user" class="form-label">Domicilio</label>
+                        <input type="text" class="form-control" id="domicilio" name="domicilio" tabindex="6">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="user" class="form-label">Códgo Postal</label>
+                        <input type="text" class="form-control" id="cod_postal" name="cod_postal" tabindex="7">
+                    </div>
+                        
+                    <div class="mb-3">
+                        <label for="user" class="form-label">Numero Movil 1</label>
+                        <input type="text" class="form-control" id="num_m1" name="num_m1" tabindex="8">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="user" class="form-label">Numero Movil 2</label>
+                        <input type="text" class="form-control" id="num_m2" name="num_m2" tabindex="9">
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label for="user" class="form-label">Email</label>
+                        <input type="text" class="form-control" id="email" name="email" tabindex="10">
+                    </div>
+
+                    <button type="submit" class="btn btn-primary" tabindex="5">Guardar</button>
+                    <a href="/" class="btn btn-secondary">Cancelar</a>
+                </form>
+            </div>
+        </div>        
+
+
+    
+    </body>
+</html>
